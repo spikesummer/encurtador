@@ -8,6 +8,7 @@ export const Container = styled.div`
     position: relative;
     flex-direction: column;
     justify-content: center;
+
         @media (max-width: 48rem){
             margin-bottom: 2.5rem;
             margin-top: 6.641rem;
@@ -43,10 +44,6 @@ export const Container = styled.div`
         margin: 1.125rem auto;
         border-radius: 0.25rem;
         flex-direction: column;
-        
-        /* @media (max-width: 48rem){
-            height: 2.25rem;
-        } */
     }
     
     span {
@@ -78,6 +75,10 @@ export const Container = styled.div`
     }
 
     span:active .icon{
+        transform: rotate(90deg);
+    }
+
+    .rotate{
         transform: rotate(90deg);
     }
 

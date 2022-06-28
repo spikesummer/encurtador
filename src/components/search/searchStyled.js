@@ -13,9 +13,22 @@ export const Container = styled.div`
     margin: 0 auto;
     border-radius: 0.5rem;
     width: 100%;
-    height: 8.188rem;
+    min-height: 8.188rem;
     bottom: -4.125rem;
     
+    @media (max-width: 48rem){
+        flex-direction: column;
+        padding: 2.25rem 1rem;
+
+        input{
+            margin-bottom: 0.875rem;
+        }
+
+        /* button{
+            width: 100%;
+            display: flex;
+        } */
+    }
     input{
         width: 100%;
         height: 2.75rem;
@@ -41,7 +54,7 @@ export const Container = styled.div`
         border-radius: 0.25rem;
         color: ${white};
         background: ${blueMarine};
-        width: 11.813rem;
+        min-width: 11.813rem;
         height: 2.75rem;
         font-weight: 700;
         font-size: 1.125rem;

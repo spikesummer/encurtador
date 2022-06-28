@@ -13,12 +13,23 @@ export const Container = styled.header`
 
     @media (max-width: 48rem){
         padding: 0 1rem;
+
+        a{
+            display: none;
+        }
+
+        svg{
+            margin-left: 2.75rem;
+            margin-top: 4.063rem;
+        }
     }
 
     svg{
         width: 12.313rem;
         height: 2.625rem;
         margin-top: 5.125rem;
+        align-items: center;
+        justify-content: left;
     }
     
     a{

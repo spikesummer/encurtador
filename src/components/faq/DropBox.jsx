@@ -31,7 +31,7 @@ export const DropBox = () => {
                         return (
                             <nav key={index}>
                                 <label for={`touch${index}`}>
-                                    <span><AiFillCaretRight className="icon" />{item.question}</span>
+                                    <span onClick={()=>{item.className.add("rotate")}}><AiFillCaretRight className="icon" />{item.question}</span>
                                 </label>
                                 <input type="checkbox" id={`touch${index}`} />
                                 <ul className="slide">
